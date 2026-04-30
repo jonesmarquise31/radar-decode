@@ -188,6 +188,28 @@
     }
     .stat-block:last-child { margin-bottom: 0; }
 
+    /* How it works steps */
+    .step-block {
+      border-left: 3px solid var(--gold);
+      padding: 4px 0 4px 20px;
+      background: var(--navy);
+      margin-bottom: 22px;
+    }
+    .step-block:last-child { margin-bottom: 0; }
+    .step-block .step-num {
+      font-family: 'DM Mono', ui-monospace, monospace;
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+    .step-block .step-text {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: var(--white);
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
     /* Written by section */
     .author-name {
       font-family: 'Bebas Neue', Impact, sans-serif;
@@ -281,6 +303,25 @@
       <p>Most IT professionals don't know how the market is reading them. They get filtered, ghosted, or underpaid and assume they need more skills. The signal is the problem, not the skills.</p>
       <p>Send me your LinkedIn URL and resume. Within 48 hours, you get a one-page Decode, written by me, not a quiz, naming exactly how recruiters are parsing your profile, what's getting you filtered, and three specific moves to change it.</p>
       <p>This is not a coaching call. This is not a 23-question quiz. This is one page of operator intelligence specific to your profile. If you want a deeper engagement after, that's available. If not, you walk away with a read you can act on.</p>
+    </section>
+
+    <hr class="rule-thin">
+
+    <!-- 9b. How it works -->
+    <section>
+      <div class="eyebrow">HOW IT WORKS</div>
+      <div class="step-block">
+        <div class="step-num">01</div>
+        <div class="step-text">Pay $47 through Stripe checkout.</div>
+      </div>
+      <div class="step-block">
+        <div class="step-num">02</div>
+        <div class="step-text">Drop your LinkedIn URL and resume on the intake page that loads after payment.</div>
+      </div>
+      <div class="step-block">
+        <div class="step-num">03</div>
+        <div class="step-text">I personally read your materials and write your one-page Decode. Within 48 hours, it lands in your inbox.</div>
+      </div>
     </section>
 
     <hr class="rule-thin">
