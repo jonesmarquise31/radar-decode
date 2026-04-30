@@ -2,3 +2,5 @@ node_modules/
 .DS_Store
 .netlify/
 .claude/
+.env
+.env.*

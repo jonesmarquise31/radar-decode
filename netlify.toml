@@ -1,2 +1,9 @@
 [build]
   publish = "."
+  functions = "netlify/functions"
+
+# Clean URL: /thanks serves thanks.html (rewrite, not redirect — URL stays /thanks)
+[[redirects]]
+  from = "/thanks"
+  to = "/thanks.html"
+  status = 200
