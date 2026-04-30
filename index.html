@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Radar Decode — A one-page read of how the hiring system is reading you</title>
+  <meta name="description" content="One page of operator intelligence specific to your LinkedIn profile. Three repositioning moves. $47. 48-hour delivery.">
+
+  <meta property="og:title" content="The Radar Decode">
+  <meta property="og:description" content="A one-page read of how the hiring system is reading you. Plus three moves to change it. $47.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://radar-decode.netlify.app">
+  <meta property="og:image" content="https://radar-decode.netlify.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Radar Decode">
+  <meta name="twitter:description" content="A one-page read of how the hiring system is reading you. Plus three moves to change it. $47.">
+  <meta name="twitter:image" content="https://radar-decode.netlify.app/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0D1B2A;
+      --gold: #C9A84C;
+      --white: #FFFFFF;
+      --cream: #E8E3D6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Brand bar */
+    .brand-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0 16px;
+      font-family: 'DM Mono', ui-monospace, monospace;
+      color: var(--gold);
+      text-transform: uppercase;
+    }
+    .brand-bar .left { font-size: 13px; letter-spacing: 3px; }
+    .brand-bar .right { font-size: 10px; letter-spacing: 1.5px; }
+
+    .brand-divider {
+      height: 1px;
+      width: 100%;
+      background: rgba(201, 168, 76, 0.25);
+    }
+
+    /* Section spacing */
+    section {
+      padding: 56px 0;
+    }
+    section:first-of-type {
+      padding-top: 64px;
+    }
+
+    /* Eyebrows */
+    .eyebrow {
+      font-family: 'DM Mono', ui-monospace, monospace;
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    /* H1 */
+    h1 {
+      font-family: 'Bebas Neue', Impact, sans-serif;
+      color: var(--white);
+      font-size: 64px;
+      line-height: 0.95;
+      letter-spacing: 2px;
+      font-weight: 400;
+      margin-bottom: 28px;
+    }
+
+    /* Subhead */
+    .subhead {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      color: var(--cream);
+      font-size: 22px;
+      line-height: 1.45;
+      max-width: 580px;
+      margin-bottom: 32px;
+    }
+
+    /* Gold accent rule (short) */
+    .rule-accent {
+      width: 56px;
+      height: 3px;
+      background: var(--gold);
+      border: 0;
+      margin: 0 0 36px 0;
+    }
+
+    /* Full-width 1px gold divider */
+    .rule-thin {
+      height: 1px;
+      width: 100%;
+      background: rgba(201, 168, 76, 0.25);
+      border: 0;
+      margin: 0;
+    }
+
+    /* CTA button */
+    .cta {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: 'Bebas Neue', Impact, sans-serif;
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 16px 28px;
+      min-height: 48px;
+      line-height: 1.1;
+      border: 0;
+      cursor: pointer;
+      transition: filter 0.15s ease, transform 0.15s ease;
+    }
+    .cta:hover, .cta:focus {
+      filter: brightness(1.08);
+      outline: none;
+    }
+    .cta:active { transform: translateY(1px); }
+
+    .cta-row {
+      margin-bottom: 14px;
+    }
+
+    .reassurance {
+      font-family: 'DM Mono', ui-monospace, monospace;
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Body paragraphs */
+    .body-copy p {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: var(--cream);
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 640px;
+      margin-bottom: 22px;
+    }
+    .body-copy p:last-child { margin-bottom: 0; }
+
+    /* What you get blocks (V39.1 style) */
+    .stat-block {
+      border-left: 3px solid var(--gold);
+      padding: 4px 0 4px 20px;
+      background: var(--navy);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: var(--white);
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 22px;
+    }
+    .stat-block:last-child { margin-bottom: 0; }
+
+    /* Written by section */
+    .author-name {
+      font-family: 'Bebas Neue', Impact, sans-serif;
+      color: var(--white);
+      font-size: 36px;
+      letter-spacing: 2px;
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
+    .author-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      color: var(--cream);
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+    .author-bio {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: var(--cream);
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 640px;
+    }
+
+    /* Bottom CTA section */
+    .cta-bottom {
+      text-align: center;
+      padding: 56px 0;
+    }
+
+    /* Footer */
+    footer {
+      padding: 32px 0 48px;
+      text-align: center;
+    }
+    footer .footer-line {
+      font-family: 'DM Mono', ui-monospace, monospace;
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 6px 0;
+    }
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    /* Mobile */
+    @media (max-width: 640px) {
+      h1 { font-size: 48px; letter-spacing: 1.5px; }
+      .subhead { font-size: 18px; }
+      .body-copy p { font-size: 18px; }
+      .author-name { font-size: 32px; }
+      section { padding: 44px 0; }
+      section:first-of-type { padding-top: 48px; }
+      .container { padding: 0 20px; }
+    }
+
+    /* Tap target sizing for very small viewports */
+    @media (max-width: 380px) {
+      .cta { padding: 14px 22px; font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 1. Brand bar -->
+    <header class="brand-bar">
+      <span class="left">WORKFORCE RADAR</span>
+      <span class="right">DECODE / 001</span>
+    </header>
+    <div class="brand-divider"></div>
+
+    <!-- 2-7. Hero -->
+    <section>
+      <div class="eyebrow">OPERATOR BRIEF — $47</div>
+      <h1>THE RADAR DECODE</h1>
+      <p class="subhead">A one-page read of how the hiring system is reading you. Plus three moves to change it.</p>
+      <hr class="rule-accent">
+      <div class="cta-row">
+        <a class="cta" href="https://buy.stripe.com/8x2bJ0deN1o1bex0GT2cg0r">DECODE MY PROFILE — $47</a>
+      </div>
+      <div class="reassurance">48-HOUR TURNAROUND&nbsp;&nbsp;·&nbsp;&nbsp;PDF DELIVERY&nbsp;&nbsp;·&nbsp;&nbsp;ONE PAGE</div>
+    </section>
+
+    <!-- 8. Body -->
+    <section class="body-copy">
+      <p>Most IT professionals don't know how the market is reading them. They get filtered, ghosted, or underpaid and assume they need more skills. The signal is the problem, not the skills.</p>
+      <p>Send me your LinkedIn URL or a paragraph of your work history. Within 48 hours, you get a one-page Decode — written by me, not a quiz — naming exactly how recruiters are parsing your profile, what's getting you filtered, and three specific moves to change it.</p>
+      <p>This is not a coaching call. This is not a 23-question quiz. This is one page of operator intelligence specific to your profile. If you want a deeper engagement after, that's available. If not, you walk away with a read you can act on.</p>
+    </section>
+
+    <hr class="rule-thin">
+
+    <!-- 10. What you get -->
+    <section>
+      <div class="eyebrow">WHAT YOU GET</div>
+      <div class="stat-block">How your profile is currently being parsed by the hiring system</div>
+      <div class="stat-block">The specific signals causing you to be filtered or undervalued</div>
+      <div class="stat-block">Three repositioning moves anchored to your actual artifacts</div>
+    </section>
+
+    <hr class="rule-thin">
+
+    <!-- 12. Written by -->
+    <section>
+      <div class="eyebrow">WRITTEN BY</div>
+      <div class="author-name">MARQUISE JONES</div>
+      <div class="author-title">Founder, Workforce Radar</div>
+      <p class="author-bio">Built Workforce Radar after classifying over 250 IT, cybersecurity, and finance professionals. Every Decode is written personally, anchored to your actual LinkedIn or work history. No quiz output. No archetype assumptions. Just a real read.</p>
+    </section>
+
+    <!-- 13. Bottom CTA -->
+    <div class="cta-bottom">
+      <a class="cta" href="https://buy.stripe.com/8x2bJ0deN1o1bex0GT2cg0r">DECODE MY PROFILE — $47</a>
+    </div>
+
+    <hr class="rule-thin">
+
+    <!-- 14. Footer -->
+    <footer>
+      <div class="footer-line">© RADAR 2026</div>
+      <div class="footer-line"><a href="https://workforceradar.com">workforceradar.com</a></div>
+    </footer>
+
+  </div>
+</body>
+</html>
