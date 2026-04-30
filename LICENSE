@@ -1,0 +1,20 @@
+Copyright © 2026 Marquise Jones. All rights reserved.
+
+The contents of this repository — the source of [radar-decode.netlify.app](https://radar-decode.netlify.app), including HTML, CSS, JavaScript, Netlify Functions, configuration, and design assets — are made publicly visible for transparency and portfolio reference.
+
+PERMISSION IS NOT GRANTED TO:
+
+- Use this code, in whole or in part, to build a competing product
+- Redistribute, fork-as-a-product, or publish modified versions
+- Use the Radar name, the Workforce Radar name, the Decode product name, or the visual brand system in any product or marketing material
+- Train AI models on this content for purposes that compete with the original work
+
+PERMISSION IS GRANTED TO:
+
+- Read the code for personal learning
+- Reference engineering patterns or implementation choices in technical writing, with attribution and a link back to the source repository
+- Quote short excerpts in commentary or review
+
+For licensing inquiries, contact jonesmarquise31@gmail.com.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
